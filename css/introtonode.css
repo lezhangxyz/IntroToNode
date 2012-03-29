@@ -1,0 +1,217 @@
+/**
+ * This is a stylesheet for a demo presentation for impress.js
+ * 
+ * It is not meant to be a part of impress.js and is not required by impress.js.
+ * I expect that anyone creating a presentation for impress.js would create their own
+ * set of styles.
+ */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    
+    min-height: 740px;
+    background-color: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(115,199,63)), to(#53992D));
+    background: -webkit-radial-gradient(rgb(115,199,63), #53992D);
+    background:    -moz-radial-gradient(rgb(115,199,63), #53992D);
+    background:      -o-radial-gradient(rgb(115,199,63), #53992D);
+    background:         radial-gradient(rgb(115,199,63), #53992D);
+
+    -webkit-font-smoothing: antialiased;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+
+/* COMMON STEP STYLES */
+
+.step {
+    width: 900px;
+    padding: 40px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'Pontano Sans', helvetica, sans-serif;
+
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.step {
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+/* fade out inactive slides */
+.step:not(.active) {
+    opacity: 0.3;
+}
+
+/* IMPRESS NOT SUPPORTED STYLES */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+    
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border-radius: 10px;
+    border: 1px solid #E4C652;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-disabled .step,
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+/* Title Slide */
+#title {
+    width:900px;
+    text-align:center;
+    font-size:100px;
+    font-weight: bold;
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+}
+#title h2 {
+    font-size:30px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    margin-bottom:20px;
+}
+#title h3 {
+    font-size:30px;
+    text-shadow:none;
+}
+
+#agenda {
+    text-align:right;
+}
+
+/* Cube */
+.cube {
+}
+
+.cube h1 {
+    font-weight:bold;
+    border-bottom:3px solid black;
+    font-size:70px;
+    margin-bottom:30px;
+}
+.cube ul li:before {
+    content: "⟩ \0020"
+}
+
+.rightFace,
+.leftFace,
+.topFace,
+.backRightFace,
+.backLeftFace,
+.bottomFace {
+        width: 700px;
+        height: 700px;
+        background: white;
+}
+
+.rightFace,
+.leftFace,
+.topFace {
+}
+
+.leftFace {
+}
+
+.rightFace {
+}
+
+.topFace {
+}
+
+.topFace {
+}
