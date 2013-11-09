@@ -2,7 +2,7 @@
 var express = require('express');
 var app = module.exports = express.createServer();
 // Use environment PORT variable if it exists (for Heroku)
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 
 // Configure Express to route all files in the current directory automatically
 app.configure(function () {
